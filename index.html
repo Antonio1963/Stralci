@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Stralci</title>
+  <meta name="description" content="Le tue password e i tuoi codici, cifrati e sempre a portata di mano. I dati restano solo sul tuo dispositivo.">
+  <meta name="theme-color" content="#14213d">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Stralci">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icona.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/icona-192.png">
+  <link rel="stylesheet" href="css/stile.css">
+</head>
+<body class="bloccato">
+  <header class="testata">
+    <button id="marchio" class="marchio" type="button">🔐 Stralci</button>
+    <span id="profilo-attivo" class="profilo-attivo" hidden></span>
+    <div class="azioni">
+      <button id="blocca" class="pillola" type="button" title="Blocca adesso">🔒 Blocca</button>
+      <button id="opzioni" class="pillola" type="button" title="Opzioni, backup, importazione">⚙︎</button>
+    </div>
+  </header>
+
+  <main id="contenuto"></main>
+
+  <div id="avviso" class="avviso" role="status" aria-live="polite"></div>
+
+  <script src="js/cripto.js"></script>
+  <script src="js/testo.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
